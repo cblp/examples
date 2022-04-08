@@ -4,7 +4,7 @@
 
 ### Definition
 
-* An  ACluster is a group of Fluence peers and target services (?), i.e. [(peer, (s1, s2, ..., sk), ...], that can be programmed to provide both availability, i.e., failover, and high-performance compute, i.e. parallelization, capabilities.
+* An  A(qua)Cluster is a group of Fluence peers and target services (?), i.e. [(peer, (s1, s2, ..., sk), ...], that can be programmed to provide both availability, i.e., failover, and high-performance compute, i.e. parallelization, capabilities.
 * Aqua is used to program the ACluster lifecyle:
   * setup an configuration, 
   * runtime management including
