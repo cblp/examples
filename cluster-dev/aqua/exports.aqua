@@ -1,0 +1,10 @@
+module Export
+
+module Exports
+-- ipfs
+import put, get_from, set_timeout, get_external_api_multiaddr from "@fluencelabs/aqua-ipfs/ipfs-api.aqua"
+export put, get_from, set_timeout, get_external_api_multiaddr
+
+-- registry
+import registerForRoute, resolveRoute, createRoute, getRouteId from "@fluencelabs/registry/routing.aqua"
+export registerForRoute, resolveRoute, createRoute, getRouteId

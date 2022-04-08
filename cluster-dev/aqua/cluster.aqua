@@ -1,0 +1,39 @@
+
+
+
+data ServiceInstance:
+    cid: string
+    blueprint_id: ?string
+    service_id: ?string
+    -- license_id: string
+
+data ServiceSet:
+    id: string
+    services: *ServiceInstance
+
+data Server:
+    peer_id: string
+    relay_id: string
+    services: *ServiceSet
+
+ data Cluster:
+    cluster_id: string
+    cluster_name: string
+    server: *Server
+
+
+
+func _set_service(node: string, bid:string, sid: ?string) -> ServiceInstance:
+    if !sid:
+        -- deploy from cid or b
+
+func init_cluster(cluster_name: string, instances: u16, services: *Service) -> string:
+    -- genertate cluster id by hashing something from the inouts
+    cluster_id = "some hash"
+
+func teardown_cluster(cluster_id: string) -> bool:
+    -- tbd
+    <- true
+
+func add_peer_to_cluster(node: ?string, ) -> Server:
+
