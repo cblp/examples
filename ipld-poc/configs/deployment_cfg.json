@@ -1,0 +1,11 @@
+{
+  "ipld-poc": {
+    "name": "ipld-poc",
+    "modules": [
+      {
+        "name": "ipld-poc",
+        "path": "./artifacts/ipld_poc.wasm"
+      }
+    ]
+  }
+}

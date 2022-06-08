@@ -1,0 +1,29 @@
+[package]
+name = "ipld_poc"
+version = "0.1.5"
+authors = ["boneyard93501 <4523011+boneyard93501@users.noreply.github.com>"]
+edition = "2018"
+description = "ipld-poc, a Marine wasi module"
+license = "Apache-2.0"
+
+[[bin]]
+name = "ipld_poc"
+path = "src/main.rs"
+
+[dependencies]
+marine-rs-sdk = { version = "0.6.15", features = ["logger"] }
+log = "0.4.14"
+ipld-proofs = { git = "https://github.com/austinabell/ipld-proofs.git" }
+ipld_blockstore = "0.1.1"
+# cid = "0.8.5"
+forest_cid = "0.3.0"
+forest_ipld = "0.1.1"
+forest_db = "0.1.0"
+
+[dev-dependencies]
+marine-rs-sdk-test = "0.5.0"
+
+
+[dev]
+[profile.release]
+opt-level = "s"
