@@ -1,0 +1,11 @@
+{
+  "glaze-integration": {
+    "name": "glaze-integration",
+    "modules": [
+      {
+        "name": "glaze-integration",
+        "path": "./artifacts/glaze_integration.wasm"
+      }
+    ]
+  }
+}

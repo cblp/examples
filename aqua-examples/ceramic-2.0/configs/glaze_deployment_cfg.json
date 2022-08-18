@@ -1,0 +1,13 @@
+{
+  "ceramic-service": {
+    "name": "ceramic-service",
+    "modules": [
+      {
+        "name": "glaze_adapter",
+        "path": "./artifacts/glaze_adapter.wasm",
+        "mounted_binaries": ["glaze", "/usr/bin/glaze"],
+        "logger_enabled": true
+      }
+    ]
+  }
+}

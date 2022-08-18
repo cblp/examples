@@ -1,0 +1,9 @@
+modules_dir = "artifacts/"
+
+[[module]]
+name = "glaze_adapter"
+max_heap_size = "500 Kib"
+logger_enabled = true
+
+[module.mounted_binaries]
+glaze = "/Users/bebo/.nvm/versions/node/v16.15.1/bin/glaze"
